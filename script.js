@@ -1,6 +1,4 @@
-function letterCombinations(input_digit) {
-  //Complete the function
-	function  helper(index, curr) {
+function  helper(index, curr) {
 
 		if(index == input_digit.length){
 			if (curr.length > 1) {
@@ -9,12 +7,15 @@ function letterCombinations(input_digit) {
 			}
 		}
 
-		
 		let elem = input_digit[index];
 		for(let c for obj[elem]){
 			helper(index+1, curr + c);
 		}
 }
+
+function letterCombinations(input_digit) {
+  //Complete the function
+	
 	let obj ={
 		'0' = '0';
 		'1' = '1';
@@ -33,7 +34,6 @@ function letterCombinations(input_digit) {
 
 	res.sort();
 	return res;
-
 }
 
 module.exports = letterCombinations;
