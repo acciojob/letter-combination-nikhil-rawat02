@@ -20,6 +20,7 @@ function letterCombinations(input_digit) {
         for (var j = 0; j < b.length; j++) combi.push(a[i] + b[j]);
       return combi;
     });
+	ans.sort();
   return ans;
 }
 console.log(letterCombinations("23"));
