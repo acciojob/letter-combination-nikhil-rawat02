@@ -29,7 +29,7 @@ function  helper(index, curr, input_digit) {
 function letterCombinations(input_digit) {
   //Complete the function
 	res = [];
-    if(digits.length < 1)return res;
+    if(input_digit.length < 1)return res;
 	helper(0, "", input_digit);
 
 	res.sort();
