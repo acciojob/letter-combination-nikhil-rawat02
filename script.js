@@ -12,16 +12,14 @@ var obj ={
 	}
 var res;
 function  helper(index, curr, input_digit) {
-
 		if(index == input_digit.length){
 			if (curr.length >= 1) {
 				res.push(curr);
 				return;
 			}
 		}
-
 		let elem = obj[input_digit[index]];
-        for(let i =0; i < elem.length; i++){
+	    for(let i =0; i < elem.length; i++){
             helper(index+1,curr + elem.charAt(i),input_digit);
         }
 		
@@ -29,8 +27,8 @@ function  helper(index, curr, input_digit) {
 function letterCombinations(input_digit) {
   //Complete the function
 	res = [];
-    if(input_digit.length < 1)return res;
-	helper(0, "", input_digit);
+    if(input_digit.toString().length < 1)return res;
+	helper(0, "", input_digit.toString());
 
 	res.sort();
 	return res;
