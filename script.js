@@ -10,6 +10,7 @@ var obj ={
 		'8' : "tuv",
 		'9': "wxyz"
 	}
+
 var res;
 function  helper(index, curr, input_digit) {
 		if(index == input_digit.length){
@@ -27,10 +28,10 @@ function  helper(index, curr, input_digit) {
 function letterCombinations(input_digit) {
   //Complete the function
 	res = [];
-    if(input_digit.toString().length < 1)return res;
-	helper(0, "", input_digit.toString());
+    if(input_digit.length < 1)return res;
+	helper(0, "", input_digit);
 
 	res.sort();
 	return res;
 }
-console.log(letterCombinations(23));
+console.log(letterCombinations("23"));
