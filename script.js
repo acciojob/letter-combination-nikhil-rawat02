@@ -30,7 +30,7 @@ function letterCombinations(input_digit) {
   //Complete the function
 	res = [];
     if(digits.length < 1)return res;
-	helper(0, "", digits);
+	helper(0, "", input_digit);
 
 	res.sort();
 	return res;
