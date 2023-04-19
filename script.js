@@ -23,4 +23,4 @@ function letterCombinations(input_digit) {
 	ans.sort();
   return ans;
 }
-console.log(letterCombinations("23"));
+module.exports = letterCombinations;
